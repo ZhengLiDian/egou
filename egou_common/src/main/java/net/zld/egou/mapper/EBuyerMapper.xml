@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zld.egou.mapper.EBuyerMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="net.zld.egou.entity.EBuyer">
+        <id column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="gender" property="gender" />
+        <result column="email" property="email" />
+        <result column="real_name" property="realName" />
+        <result column="register_time" property="registerTime" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="town" property="town" />
+        <result column="addr" property="addr" />
+        <result column="is_del" property="isDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        username, password, gender, email, real_name, register_time, province, city, town, addr, is_del
+    </sql>
+
+</mapper>

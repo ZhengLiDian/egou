@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zld.egou.mapper.EOrderMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="net.zld.egou.entity.EOrder">
+        <id column="id" property="id" />
+        <result column="oid" property="oid" />
+        <result column="deliver_fee" property="deliverFee" />
+        <result column="payable_fee" property="payableFee" />
+        <result column="total_price" property="totalPrice" />
+        <result column="payment_way" property="paymentWay" />
+        <result column="payment_cash" property="paymentCash" />
+        <result column="delivery" property="delivery" />
+        <result column="isConfirm" property="isConfirm" />
+        <result column="is_paiy" property="isPaiy" />
+        <result column="state" property="state" />
+        <result column="create_date" property="createDate" />
+        <result column="note" property="note" />
+        <result column="buyer_id" property="buyerId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, oid, deliver_fee, payable_fee, total_price, payment_way, payment_cash, delivery, isConfirm, is_paiy, state, create_date, note, buyer_id
+    </sql>
+
+</mapper>

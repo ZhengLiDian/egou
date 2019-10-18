@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.zld.egou</groupId>
+    <artifactId>egou_parent1017</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>egou_common</module>
+        <module>egou_rest</module>
+        <module>egou_service</module>
+        <module>egou_portal_web</module>
+    </modules>
+
+    <name>egou_parent1017</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
+        <jersey.version>1.19.4</jersey.version>
+        <net.fckeditor.version>2.6</net.fckeditor.version>
+        <mysql.version>8.0.15</mysql.version>
+        <commons-collections-version>1.0</commons-collections-version>
+        <commons-fileupload-version>1.2.2</commons-fileupload-version>
+        <org.apache.commons-version>3.1</org.apache.commons-version>
+        <commons-codec-version>1.6</commons-codec-version>
+        <jackson-mapper-asl-version>1.9.12</jackson-mapper-asl-version>
+        <jackson-core-asl-version>1.9.12</jackson-core-asl-version>
+        <commons-net>3.5</commons-net>
+    </properties>
+
+    <!-- 只定义版本，不加载实际的依赖 -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- 引入spring核心包 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.1.6.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <!-- jersey,httpclient -->
+            <dependency>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-client</artifactId>
+                <version>${jersey.version}</version>
+            </dependency>
+            <!-- fckeditor core -->
+            <dependency>
+            <groupId>net.fckeditor</groupId>
+            <artifactId>java-core</artifactId>
+            <version>${net.fckeditor.version}</version>
+            </dependency>
+
+            <!-- 引入数据源包 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.31</version>
+            </dependency>
+
+            <!--数据库-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!-- 引入mybatis-plus核心包 -->
+            <!-- 注意mybatis-plus的核心jar包已集成了mybatis和mybatis-spring，
+                 为避免冲突，请勿再次引用这两个jar包-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>2.3</version>
+            </dependency>
+
+            <!-- 引入springboot集成mybatisplus的包 -->
+            <!--<dependency>-->
+                <!--<groupId>com.baomidou</groupId>-->
+                <!--<artifactId>mybatis-plus-boot-starter</artifactId>-->
+                <!--<version>3.2.0</version>-->
+            <!--</dependency>-->
+
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons-collections-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons-fileupload-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${org.apache.commons-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec-version}</version>
+            </dependency>
+            <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+            </dependency>
+            <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+            </dependency>
+
+            <!-- jcaptcha是一个开源的用来生成图形验证码的Java开源组件，使用起来也是非常的简单方便。 简介JCaptcha jcapthca是非常强大的，可以生成图片式的验证码
+                生成图片验证码的开源框架 -->
+            <dependency>
+                <groupId>com.octo.captcha</groupId>
+                <artifactId>jcaptcha</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <!--springmvc 转 Json -->
+            <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson-mapper-asl-version}</version>
+            </dependency>
+            <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>${jackson-core-asl-version}</version>
+            </dependency>
+
+            <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>${commons-net}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

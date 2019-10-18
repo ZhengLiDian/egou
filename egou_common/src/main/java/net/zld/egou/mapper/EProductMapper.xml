@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zld.egou.mapper.EProductMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="net.zld.egou.entity.EProduct">
+        <id column="id" property="id" />
+        <result column="no" property="no" />
+        <result column="name" property="name" />
+        <result column="weight" property="weight" />
+        <result column="is_new" property="isNew" />
+        <result column="is_hot" property="isHot" />
+        <result column="is_commend" property="isCommend" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="check_time" property="checkTime" />
+        <result column="check_user_id" property="checkUserId" />
+        <result column="is_show" property="isShow" />
+        <result column="is_del" property="isDel" />
+        <result column="type_id" property="typeId" />
+        <result column="brand_id" property="brandId" />
+        <result column="keywords" property="keywords" />
+        <result column="sales" property="sales" />
+        <result column="description" property="description" />
+        <result column="package_list" property="packageList" />
+        <result column="feature" property="feature" />
+        <result column="color" property="color" />
+        <result column="size" property="size" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, no, name, weight, is_new, is_hot, is_commend, create_time, create_user_id, check_time, check_user_id, is_show, is_del, type_id, brand_id, keywords, sales, description, package_list, feature, color, size
+    </sql>
+
+</mapper>
