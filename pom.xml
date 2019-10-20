@@ -62,9 +62,9 @@
             </dependency>
             <!-- fckeditor core -->
             <dependency>
-            <groupId>net.fckeditor</groupId>
-            <artifactId>java-core</artifactId>
-            <version>${net.fckeditor.version}</version>
+                <groupId>net.fckeditor</groupId>
+                <artifactId>java-core</artifactId>
+                <version>${net.fckeditor.version}</version>
             </dependency>
 
             <!-- 引入数据源包 -->
@@ -92,9 +92,9 @@
 
             <!-- 引入springboot集成mybatisplus的包 -->
             <!--<dependency>-->
-                <!--<groupId>com.baomidou</groupId>-->
-                <!--<artifactId>mybatis-plus-boot-starter</artifactId>-->
-                <!--<version>3.2.0</version>-->
+            <!--<groupId>com.baomidou</groupId>-->
+            <!--<artifactId>mybatis-plus-boot-starter</artifactId>-->
+            <!--<version>3.2.0</version>-->
             <!--</dependency>-->
 
 
@@ -121,14 +121,14 @@
                 <version>${commons-codec-version}</version>
             </dependency>
             <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20180813</version>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20180813</version>
             </dependency>
             <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.5</version>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.5</version>
             </dependency>
 
             <!-- jcaptcha是一个开源的用来生成图形验证码的Java开源组件，使用起来也是非常的简单方便。 简介JCaptcha jcapthca是非常强大的，可以生成图片式的验证码
@@ -141,20 +141,20 @@
 
             <!--springmvc 转 Json -->
             <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>${jackson-mapper-asl-version}</version>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>${jackson-mapper-asl-version}</version>
             </dependency>
             <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-            <version>${jackson-core-asl-version}</version>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>${jackson-core-asl-version}</version>
             </dependency>
 
             <dependency>
-            <groupId>commons-net</groupId>
-            <artifactId>commons-net</artifactId>
-            <version>${commons-net}</version>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${commons-net}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
