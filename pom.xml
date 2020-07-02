@@ -25,7 +25,7 @@
         <junit.version>4.12</junit.version>
         <jersey.version>1.19.4</jersey.version>
         <net.fckeditor.version>2.6</net.fckeditor.version>
-        <mysql.version>8.0.15</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <commons-collections-version>1.0</commons-collections-version>
         <commons-fileupload-version>1.2.2</commons-fileupload-version>
         <org.apache.commons-version>3.1</org.apache.commons-version>
