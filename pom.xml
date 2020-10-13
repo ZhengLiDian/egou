@@ -22,7 +22,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <jersey.version>1.19.4</jersey.version>
         <net.fckeditor.version>2.6</net.fckeditor.version>
         <mysql.version>8.0.15</mysql.version>
