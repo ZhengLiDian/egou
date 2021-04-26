@@ -128,7 +128,7 @@
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.5</version>
+                <version>2.7</version>
             </dependency>
 
             <!-- jcaptcha是一个开源的用来生成图形验证码的Java开源组件，使用起来也是非常的简单方便。 简介JCaptcha jcapthca是非常强大的，可以生成图片式的验证码
