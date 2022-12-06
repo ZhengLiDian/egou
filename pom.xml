@@ -32,7 +32,7 @@
         <commons-codec-version>1.6</commons-codec-version>
         <jackson-mapper-asl-version>1.9.12</jackson-mapper-asl-version>
         <jackson-core-asl-version>1.9.12</jackson-core-asl-version>
-        <commons-net>3.5</commons-net>
+        <commons-net>3.9.0</commons-net>
     </properties>
 
     <!-- 只定义版本，不加载实际的依赖 -->
